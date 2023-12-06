@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding-inline: 10px;
+}
+
+header {
+  position: relative;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 5px;
+}
+
+header img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.texto-centrado {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: screen;
+}
+
+.texto-centrado h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 3em;
+  color: black; /* Cambia el color de texto según tu preferencia */
+  background-color: white; /* Establece un fondo blanco detrás del texto */
+  padding: 10px 5px; /* Añade un padding al texto para hacerlo más visible */
+  border-radius: 10px; /* Redondea las esquinas del fondo del texto */
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1em;
+    color: black;
+}
+
+section img {
+    width: 450px;
+    height: 600px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    object-fit: cover;
+    object-position: center top;
+}
+
+p{
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.imagen-con-overlay {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: -100%; /* Empieza fuera de la pantalla */
+    width: 80%; /* El porcentaje puede variar según tu diseño */
+    height: 100%;
+    background-color: rgb(189, 103, 184); /* Fondo semi-transparente */
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.5s ease, left 0.5s ease; /* Efecto de transición */
+    display: flex;
+    padding: 30px;
+    border-top-left-radius: 10px;
+}
+
+.imagen-con-overlay:hover .overlay {
+    opacity: 1; /* Hacer visible al pasar el mouse */
+    left: 0; /* Muestra desde la izquierda */
+    transition-delay: 0.3s; /* Retrasa la animación de aparición */
+}
+
+.texto-overlay {
+    /* Estilos para el texto en el overlay */
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.texto-overlay h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.experiencia {
+    margin-bottom: 30px;
+}
+
+.experiencia h4 {
+    font-size: 1.2em;
+    margin-bottom: 0px;
+}
+
+.experiencia p {
+    font-size: 0.75em;
+}
